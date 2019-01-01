@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{console.log("I got here:::")}),getDetails=a=>{const b=document.querySelector(".more-info");console.log("Lets get details ",a.getAttribute("data-slide"),a.dataset.slide),document.querySelectorAll(".service-card").forEach(a=>{a.classList.remove("active")}),a.classList.add("active"),b.innerHTML=`<p>${a.dataset.slide}</p>`};

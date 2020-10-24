@@ -12,9 +12,12 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.8.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.13",
     "cssnano": "^4.1.10",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-babel-minify": "^0.5.1",
+    "gulp-file-include": "^2.2.2",
     "gulp-postcss": "^8.0.0"
   },
   "dependencies": {

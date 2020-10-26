@@ -178,7 +178,7 @@ fetchInfo = (id) => {
   
 </div>`;
     var swiperDetails = new Swiper(".details", {
-      preloadImages: false,
+      // preloadImages: false,
       lazy: true,
       effect: "fade",
       speed: 1000,

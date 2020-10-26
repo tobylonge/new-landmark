@@ -28,4 +28,4 @@ let swiper=new Swiper(".carousel",{centeredSlides:!0,spaceBetween:30,effect:"fad
      
   </div>
   
-</div>`;new Swiper(".details",{preloadImages:!1,lazy:!0,effect:"fade",speed:1e3,fadeEffect:{crossFade:!0}})}};
+</div>`;new Swiper(".details",{lazy:!0,effect:"fade",speed:1e3,fadeEffect:{crossFade:!0}})}};

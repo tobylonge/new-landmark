@@ -145,22 +145,26 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="service-card active" data-slide="1" onclick="getDetails(this)">
-                                    <img src="img/service/1.png" alt="">
+                                    <img src="img/service/1.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="2" onclick="getDetails(this)">
-                                    <img src="img/service/2.png" alt="">
+                                    <img src="img/service/2.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="3" onclick="getDetails(this)">
-                                    <img src="img/service/3.png" alt="">
+                                    <img src="img/service/3.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="4" onclick="getDetails(this)">
-                                    <img src="img/service/4.png" alt="">
+                                    <img src="img/service/4.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -170,27 +174,32 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="6" onclick="getDetails(this)">
-                                    <img src="img/service/6.png" alt="">
+                                    <img src="img/service/6.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="7" onclick="getDetails(this)">
-                                    <img src="img/service/7.png" alt="">
+                                    <img src="img/service/7.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="8" onclick="getDetails(this)">
-                                    <img src="img/service/8.png" alt="">
+                                    <img src="img/service/8.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="9" onclick="getDetails(this)">
-                                    <img src="img/service/9.png" alt="">
+                                    <img src="img/service/9.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card" data-slide="10" onclick="getDetails(this)">
-                                    <img src="img/service/10.jpeg" alt="">
+                                    <img src="img/service/10.jpeg" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                         </div>
@@ -199,12 +208,11 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <div class="more-info text-white">
-                    <p>1</p>
-                </div>
+            </div>
+            <div class="more-info">
 
             </div>
-
+            <div class="hidden w-2/5 py-16 transform rotate-90"></div>
         </div>
     </div>
 
@@ -212,58 +220,7 @@
 
     <!-- footer -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.carousel', {
-            centeredSlides: true,
-            spaceBetween: 30,
-            effect: 'fade',
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
 
-        var swiperSlider = new Swiper('.sliders', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            preventClicksPropagation: true,
-            // init: false,
-            // mousewheel: true,
-            // keyboard: true,
-            // loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                '@0.00': {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                    spaceBetween: 15,
-                },
-                '@0.75': {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                    spaceBetween: 15,
-                },
-                '@1.00': {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    spaceBetween: 15,
-                },
-                '@1.50': {
-                    slidesPerView: 5,
-                    slidesPerGroup: 5,
-                    spaceBetween: 15,
-                },
-            }
-        });
-    </script>
     <script src="js/main.js"></script>
 </body>
 

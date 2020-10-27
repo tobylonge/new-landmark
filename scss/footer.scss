@@ -1,0 +1,20 @@
+footer {
+  background: #060934;
+  border-top: 5px solid #071648;
+  padding-bottom: 2rem;
+  .footer {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 2rem;
+  }
+}
+
+.social_media {
+  border-top: 1px solid #ffffff;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  .icons {
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}

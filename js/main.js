@@ -35,8 +35,8 @@ let swiperSlider = new Swiper(".sliders", {
   },
   breakpoints: {
     "@0.00": {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 15,
     },
     "@0.75": {
@@ -123,6 +123,47 @@ const businessInfo = [
 document.addEventListener("DOMContentLoaded", () => {
   console.log("I got here:::");
   fetchInfo(1);
+
+  //nav toggle
+  document.querySelector(".hfe-nav-menu-icon").addEventListener("click", () => {
+    document.querySelector(".menu-nav").classList.remove("hidden");
+  });
+
+  document.querySelector(".menu-nav").addEventListener("click", () => {
+    document.querySelector(".menu-nav").classList.add("hidden");
+  });
+  document.querySelector(".close-btn").addEventListener("click", () => {
+    document.querySelector(".menu-nav").classList.add("hidden");
+  });
+
+  let menus = document.querySelectorAll(".menu-item a");
+  console.log(menus);
+  menus.forEach((el) => {
+    console.log("el ", el);
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log("open here::: ", el, el.nextElementSibling);
+      if (el.nextElementSibling) {
+        if (el.nextElementSibling.classList.contains("hidden")) {
+          el.nextElementSibling.classList.remove("hidden");
+          el.querySelector(".fa-caret-down").classList.add(
+            "transform",
+            "rotate-180"
+          );
+        } else {
+          el.nextElementSibling.classList.add("hidden");
+          el.querySelector(".fa-caret-down").classList.remove(
+            "transform",
+            "rotate-180"
+          );
+        }
+      }
+      // document
+      //   .querySelector(".menu-item a + .dropdown-menu")
+      //   .classList.add("block");
+    });
+  });
 });
 
 getDetails = (e) => {
@@ -153,8 +194,8 @@ fetchInfo = (id) => {
       <div class="swiper-lazy-preloader"></div>
       </div>
       <div class="background-overlay">
-        <div class="container mx-auto content">
-          <div class="w-2/5 py-16">
+        <div class="container mx-auto content px-4 md:px-0">
+          <div class="md:w-2/5 py-16 w-full">
             <p class="text-white content-text">${info[0].text}</p>
             <ul class="text-white">
               <li>

@@ -50,8 +50,8 @@ let swiperSlider = new Swiper(".sliders", {
       spaceBetween: 15,
     },
     "@1.50": {
-      slidesPerView: 5,
-      slidesPerGroup: 5,
+      slidesPerView: 6,
+      slidesPerGroup: 6,
       spaceBetween: 15,
     },
   },

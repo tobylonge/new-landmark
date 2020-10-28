@@ -1,5 +1,6 @@
 $primary-color: #ff8300;
 $secondary-color: #2d36b4;
+$dark-bg: #262d61;
 
 .text-primary {
   color: $primary-color;
@@ -13,4 +14,7 @@ $secondary-color: #2d36b4;
 }
 .bg-secondary {
   background: $secondary-color;
+}
+.bg-dark {
+  background: $dark-bg;
 }

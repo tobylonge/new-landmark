@@ -65,7 +65,7 @@ function watchTask() {
   });
   watch(["./*.html", "./template/*.html", "./scss/*.scss"], cssTask);
   watch(["./*.html", "./template/*.html"], moveFiles);
-  watch("./js/main.js", jsTask);
+  watch("./js/*.js", jsTask);
   watch(["./*.html", "./template/*.html"], includefileTask);
   watch(["./*.html", "./template/*.html"]).on("change", browserSync.reload);
 }

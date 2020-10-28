@@ -1,5 +1,5 @@
 header {
-  background-color: rgba(38, 45, 96, 0.9);
+  background-color: rgba(38, 45, 96, 0.3);
 }
 
 .text-15 {
@@ -31,4 +31,9 @@ header {
   font-size: 25px;
   color: #fff;
   cursor: pointer;
+  a:hover {
+    i {
+      color: $primary-color;
+    }
+  }
 }

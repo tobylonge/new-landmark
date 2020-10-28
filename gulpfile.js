@@ -27,7 +27,7 @@ function moveFiles() {
 }
 
 function jsTask() {
-  return src("./js/main.js")
+  return src("./js/*.js")
     .pipe(
       minify({
         mangle: {

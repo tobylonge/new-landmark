@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
   menus.forEach((el) => {
     console.log("el ", el);
     el.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
       console.log("open here::: ", el, el.nextElementSibling);
       if (el.nextElementSibling) {
+        e.preventDefault();
+        e.stopPropagation();
         if (el.nextElementSibling.classList.contains("hidden")) {
           el.nextElementSibling.classList.remove("hidden");
           el.querySelector(".fa-caret-down").classList.add(
@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "rotate-180"
           );
         }
+      } else {
+        return true;
       }
       // document
       //   .querySelector(".menu-item a + .dropdown-menu")

@@ -24,8 +24,6 @@ let promoSwiper = new Swiper(".promo-carousel", {
   slidesPerView: 1,
   spaceBetween: 10,
   preventClicksPropagation: true,
-  preloadImages: false,
-  lazy: true,
   speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",

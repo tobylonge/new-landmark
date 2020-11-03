@@ -1,0 +1,1 @@
+const openTab=(a,b)=>{let c,d;c=document.querySelectorAll(".tabcontent"),c.forEach(a=>{a.style.display="none"}),d=document.querySelectorAll(".tablinks"),d.forEach(a=>{a.classList.remove("active")}),document.getElementById(b).style.display="block",a.currentTarget.classList.add("active")};

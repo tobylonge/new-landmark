@@ -194,6 +194,14 @@
   }
 }
 
+.show-section {
+  // background-color: rgba(6, 9, 52, 0.47);
+  .fade {
+    animation-name: fadein;
+    animation-duration: 3s;
+  }
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

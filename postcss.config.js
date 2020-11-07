@@ -8,7 +8,7 @@ module.exports = {
     tailwindcss,
     autoprefixer,
     purgecss({
-      content: ["**/*.html"],
+      content: ["**/*.html", "**/*.js"],
       defaultExtractor: (content) =>
         content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
     }),

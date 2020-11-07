@@ -111,6 +111,12 @@
     height: 530px;
     object-fit: cover;
     animation: fadein 2s;
+    &.dev-img {
+      height: 600px;
+      @media (max-width: "768px") {
+        height: 700px;
+      }
+    }
   }
   .background-overlay {
     position: absolute;
@@ -120,6 +126,13 @@
       rgba(6, 6, 50, 0.2) 70%
     );
     z-index: 1;
+    @media (max-width: "768px") {
+      background-image: linear-gradient(
+        90deg,
+        #060632 40%,
+        rgba(6, 6, 50, 0.2) 100%
+      );
+    }
   }
   .swiper-wrapper {
     z-index: unset;
@@ -132,6 +145,23 @@
       font-weight: 100;
       font-size: 1rem;
       margin-bottom: 1.5rem;
+    }
+    .development-slider {
+      h2 {
+        border-bottom: 2px solid #707070;
+        margin-bottom: 0.75rem;
+      }
+      p {
+        font-size: 0.875rem;
+      }
+      p,
+      li {
+        margin-bottom: 0.75rem;
+      }
+      ul {
+        padding-bottom: 0.875rem;
+        border-bottom: 2px solid #cecece;
+      }
     }
   }
 }

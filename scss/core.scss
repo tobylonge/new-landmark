@@ -18,6 +18,18 @@ $dark-bg: #262d61;
 .bg-dark {
   background: $dark-bg;
 }
+.btn-default {
+  background: $primary-color;
+  padding: 0.8rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out 0s;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 @media (min-width: 1280px) {
   .container {
     max-width: 1180px;

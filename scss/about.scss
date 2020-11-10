@@ -204,6 +204,60 @@
   }
 }
 
+.career {
+  background: #060934;
+  padding-top: 88px;
+  .career-banner {
+    background-image: url("/img/about/team-banner.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s;
+    position: relative;
+    min-height: 50vh;
+    background-position-y: center;
+
+    .career-background-overlay {
+      background-color: #060632;
+      opacity: 0.7;
+      transition: background 0.3s, border-radius 0.3s, opacity 0.4s;
+      top: 0;
+      left: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .career-container {
+      min-height: 50vh;
+      .content-text {
+        position: relative;
+      }
+    }
+  }
+  .service-container {
+    border-top: 5px solid #c6c6c6;
+    border-bottom: 5px solid #c6c6c6;
+  }
+  .feature-list {
+    &-icon {
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      background-color: #37368e;
+      border-radius: 50%;
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .career-content {
+    border-bottom: 5px solid #c6c6c6;
+    border-top: 5px solid #c6c6c6;
+  }
+}
+
 @keyframes fadeEffect {
   from {
     opacity: 0;

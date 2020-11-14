@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Career | Landmark</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background: #ffffff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #f5a127;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: -15px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+</style>
+
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html')
+
+    <!-- main -->
+    <div class="contact">
+        <div class="service-container ">
+            <div class="service-header py-8 min-h-screen flex justify-center items-center">
+                <div class=" container mx-auto md:flex px-4 md:px-0" style="margin-top: 88px">
+                    <div class="md:w-1/2 md:mr-6">
+                        <p class="uppercase text-primary mb-2">WE'D LOVE TO HEAR FROM YOU</p>
+                        <h3 class="text-white font-semibold text-2xl contact-title pb-3 relative inline-flex mb-4">
+                            Contact
+                            Us
+                        </h3>
+                        <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            volutpat justo sed efficitur cursus. Mauris fringilla quam vitae lacinia viverra. Mauris
+                            eros
+                            dolor, pellentesque sed luctus.</p>
+                        <div class="md:flex my-8">
+                            <div class="md:w-1/2 md:with-border mb-8 md:mb-0">
+                                <h2 class="text-white mb-3 uppercase text-sm">Reach us through</h2>
+                                <ul class="text-white text-sm">
+                                    <li class="flex mb-3">
+                                        <span class="text-primary mr-4">
+                                            <i aria-hidden="true" class="fas fa-map-marker-alt"></i> </span>
+                                        <span>Plot 3 &amp; 4, Water Corporation Road,
+                                            Victoria Island - Lagos</span>
+                                    </li>
+                                    <li class="flex mb-3">
+                                        <span class="text-primary mr-4">
+                                            <i aria-hidden="true" class="fas fa-phone-alt"></i> </span>
+                                        <span> +234 01 631 1447</span>
+                                    </li>
+                                    <li class="flex">
+                                        <span class="text-primary mr-4">
+                                            <i aria-hidden="true" class="far fa-envelope-open"></i> </span>
+                                        <span ">property@landmarkafrica.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=" md:w-1/2 md:ml-8">
+                                            <h2 class="text-white mb-3 uppercase text-sm">SOCIAL NETWORKS</h2>
+                                            <ul class="text-white text-sm">
+                                                <li class="flex mb-3">
+                                                    <span class="text-primary mr-4">
+                                                        <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                                    </span>
+                                                    <span>yourfbusername</span>
+                                                </li>
+                                                <li class="flex mb-3">
+                                                    <span class="text-primary mr-4">
+                                                        <i aria-hidden="true" class="fab fa-twitter"></i>
+                                                    </span>
+                                                    <span> @twitterhandle</span>
+                                                </li>
+                                                <li class="flex mb-3">
+                                                    <span class="text-primary mr-4">
+                                                        <i aria-hidden="true" class="fab fa-instagram"></i>
+                                                    </span>
+                                                    <span>insta_account</span>
+                                                </li>
+                                                <li class=" flex">
+                                                    <span class="text-primary mr-4">
+                                                        <i aria-hidden="true" class="fab fa-google-plus-g"></i>
+                                                    </span>
+                                                    <span>plusprofilename</span>
+                                                </li>
+                                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:ml-6">
+                        <h3 class="text-white font-semibold text-2xl contact-title pb-3 relative inline-flex mb-4">
+                            Send us a Message
+                        </h3>
+                        <form>
+                            <div class="mb-6">
+                                <label class="block text-white text-sm mb-2" for="name">
+                                    Name
+                                </label>
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                                    id="name" type="text" placeholder="Ex: John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-white text-sm mb-2" for="email">
+                                    Email
+                                </label>
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                                    id="email" type="email" placeholder="Ex: john@gmail.com">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-white text-sm mb-2" for="phone">
+                                    Phone Number
+                                </label>
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                                    id="phone" type="email" placeholder="Ex: 08012345678">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-white text-sm mb-2" for="name">
+                                    Message
+                                </label>
+                                <textarea rows="6"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                                    id="name" type="email" placeholder="Enter your message here"></textarea>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button
+                                    class="bg-primary hover:bg-orange-500 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase"
+                                    type="button">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ecosystem">
+            <div class="background-overlay">
+                <div class="container mx-auto py-8 px-4 md:px-0 mb-8"">
+                    <h2 class=" title text-3xl font-semibold uppercase mb-8 text-white text-center">INTERNATIONAL
+                    OFFICES
+                    </h2>
+                    <div class="flex justify-center items-center">
+                        <!-- Swiper -->
+                        <div class="relative px-10 md:px-16 container mx-auto pb-5 ">
+                            <div class=" swiper-container contact-carousel" style="position: unset;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="wk-card-body max-w-sm overflow-hidden shadow-md bg-white p-4 md:p-8">
+                                            <h2 class="wk-card-title wk-margin-remove">
+                                                <a href="" class="uppercase mb-4 inline-flex text-lg font-light">New
+                                                    Branch</a>
+
+                                            </h2>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                                <span class="ml-4"> Landmark
+                                                    Offices, No x, Location
+                                                    location loaction, destination, location</span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-phone-alt text-primary"></i>
+                                                <span class="ml-4">
+                                                    +00 000 000 000
+                                                </span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-envelope-open text-primary"></i>
+                                                <span class="ml-4"> contact@yoursite.com</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="wk-card-body max-w-sm overflow-hidden shadow-md bg-white p-4 md:p-8">
+                                            <h2 class="wk-card-title wk-margin-remove">
+                                                <a href="" class="uppercase mb-4 inline-flex text-lg font-light">SANDTON
+                                                    - SOUTH AFRICA</a>
+
+                                            </h2>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                                <span class="ml-4"> 2nd Floor, West Tower, Nelson Mandela Square, Maude
+                                                    Street, Sandton, South Africa 2196 <br /> P.O. Box 785553, Sandton
+                                                    2146</span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-phone-alt text-primary"></i>
+                                                <span class="ml-4">
+                                                    +27 (0) 11 881 5590
+                                                </span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-envelope-open text-primary"></i>
+                                                <span class="ml-4"> contact@yoursite.com</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="wk-card-body max-w-sm overflow-hidden shadow-md bg-white p-4 md:p-8">
+                                            <h2 class="wk-card-title wk-margin-remove">
+                                                <a href="" class="uppercase mb-4 inline-flex text-lg font-light">NAIROBI
+                                                    - KENYA</a>
+
+                                            </h2>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                                <span class="ml-4"> 4th Floor, Cavendish Building, 14 Riverside Drive,
+                                                    Nairobi, Kenya. <br /> P.O. BOX 100798-00101 Nairobi, Kenya</span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-phone-alt text-primary"></i>
+                                                <span class="ml-4">
+                                                    +1 234 567 8902
+                                                </span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-envelope-open text-primary"></i>
+                                                <span class="ml-4"> contact@yoursite.com</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="wk-card-body max-w-sm overflow-hidden shadow-md bg-white p-4 md:p-8">
+                                            <h2 class="wk-card-title wk-margin-remove">
+                                                <a href="" class="uppercase mb-4 inline-flex text-lg font-light">MAYFAIR
+                                                    - LONDON</a>
+
+                                            </h2>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                                <span class="ml-4"> Landmark Offices, 24 Hanover Square, Mayfair, London
+                                                    W1S 1JD UNITED KINGDOM</span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-phone-alt text-primary"></i>
+                                                <span class="ml-4">
+                                                    +44 (0) 207 529 1400
+                                                </span>
+                                            </p>
+                                            <p class="text-sm text-black text-opacity-50 mb-4">
+                                                <i class="fas fa-envelope-open text-primary"></i>
+                                                <span class="ml-4"> contact@yoursite.com</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500px"
+                        src="https://maps.google.com/maps?q=Plot%203%20%26%204%2C%20Water%20Corporation%20Road%2C%20Victoria%20Island%20-%20Lagos&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
+                        title="Plot 3 &amp; 4, Water Corporation Road, Victoria Island - Lagos"
+                        aria-label="Plot 3 &amp; 4, Water Corporation Road, Victoria Island - Lagos" data-origwidth=""
+                        data-origheight=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    @@include('template/menu.html')
+
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

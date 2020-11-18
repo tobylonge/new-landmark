@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landmark | Media</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background: #ffffff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #f5a127;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 30px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+</style>
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html')
+
+    <!-- main -->
+    <div class="media">
+        <!-- Slider -->
+        <div class="swiper-container media-carousel" style="height: 95vh;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider" style="background-image:url(img/media/1.jpg)">
+                    <div class="background-overlay">
+                        <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                            <div class="container mx-auto px-4 md:px-0">
+                                <h2 class="text-xl md:text-3xl font-medium text-white small-header uppercase">News About
+                                </h2>
+                                <h1 class="text-3xl md:text-5xl font-bold text-primary uppercase">Landmark Beach</h1>
+                                <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                    dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                    tellus,
+                                    luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                    dapibus leo.</p>
+                                <div class="premium-button-container">
+                                    <a class="premium-button" href="#" tabindex="0">
+                                        <div class="premium-button-text bg-secondary">
+                                            <span>Read MORE</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slider" style="background-image:url(img/media/2.jpeg)">
+                    <div class="background-overlay">
+                        <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                            <div class="container mx-auto px-4 md:px-0">
+                                <h2 class="text-xl md:text-2xl font-medium text-white small-header uppercase">News About
+                                    Landmark
+                                </h2>
+                                <h1 class="text-3xl md:text-3xl font-bold text-primary uppercase">Business Center</h1>
+                                <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                    dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                    tellus,
+                                    luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                    dapibus leo.</p>
+                                <div class="premium-button-container">
+                                    <a class="premium-button" href="#" tabindex="0">
+                                        <div class="premium-button-text bg-secondary">
+                                            <span>Read MORE</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="ecosystem">
+            <div class="background-overlay">
+                <div class=" container mx-auto py-12 p-4 md:p-0">
+                    <h2 class="title text-3xl font-semibold uppercase mb-8 text-white text-center">MEDIA
+                    </h2>
+                    <div class="flex justify-center flex-col md:flex-row">
+                        <div class="md:w-3/5">
+                            <div class="md:mr-8">
+                                <div class="post mb-8">
+                                    <div class="img-wrapper relative">
+                                        <img src="/img/media/3.jpeg" alt="">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 text-white p-3 bg-black bg-opacity-50 text-sm">
+                                            <i class="far fa-calendar-alt"> </i> 17 August, 2020</div>
+                                    </div>
+
+                                    <div class="bg-white p-6">
+                                        <h3 class="mb-3 font-semibold text-xl">Landmark Events become the number 1
+                                            Events
+                                            Centre in
+                                            the World
+                                        </h3>
+                                        <p class="text-sm">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem
+                                            Ipsum has been the industry’s standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book.
+                                            It has survived not only five centuries, but also the leap into
+                                        </p>
+                                        <div class="flex items-center justify-between mt-4">
+                                            <button
+                                                class="bg-primary hover:bg-orange-500 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase"
+                                                type="button">
+                                                Read More
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post mb-8">
+                                    <div class="img-wrapper relative">
+                                        <img src="/img/media/3.jpeg" alt="">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 text-white p-3 bg-black bg-opacity-50 text-sm">
+                                            <i class="far fa-calendar-alt"> </i> 17 August, 2020</div>
+                                    </div>
+
+                                    <div class="bg-white p-6">
+                                        <h3 class="mb-3 font-semibold text-xl">Covid-19 and Co-working Spaces
+                                        </h3>
+                                        <p class="text-sm">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem
+                                            Ipsum has been the industry’s standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book.
+                                            It has survived not only five centuries, but also the leap into
+                                        </p>
+                                        <div class="flex items-center justify-between mt-4">
+                                            <button
+                                                class="bg-primary hover:bg-orange-500 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase"
+                                                type="button">
+                                                Read More
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/5">
+                            <div class="md:ml-8">
+                                <h2 class="font-semibold uppercase text-white text-xl">Featured
+                                    <span class="text-primary">Post</span>
+                                </h2>
+                                <div class="small-post-wrapper mt-8 pr-4">
+                                    <div class="flex mb-8 small-post">
+                                        <div class="w-2/5">
+                                            <div class="mr-6">
+                                                <img class="" src="/img/media/3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-white text-sm flex justify-center flex-col text-justify">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard
+                                            <p class="text-white text-opacity-75 mt-4 text-xs">
+                                                <i class="far fa-clock"></i> 8 June, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex mb-8 small-post">
+                                        <div class="w-2/5">
+                                            <div class="mr-6">
+                                                <img class="" src="/img/media/3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-white text-sm flex justify-center flex-col text-justify">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard.
+                                            <p class="text-white text-opacity-75 mt-4 text-xs">
+                                                <i class="far fa-clock"></i> 8 June, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex mb-8 small-post">
+                                        <div class="w-2/5">
+                                            <div class="mr-6">
+                                                <img class="" src="/img/media/3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-white text-sm flex justify-center flex-col text-justify">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard.
+                                            <p class="text-white text-opacity-75 mt-4 text-xs">
+                                                <i class="far fa-clock"></i> 8 June, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex mb-8 small-post">
+                                        <div class="w-2/5">
+                                            <div class="mr-6">
+                                                <img class="" src="/img/media/3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-white text-sm flex justify-center flex-col text-justify">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard.
+                                            <p class="text-white text-opacity-75 mt-4 text-xs">
+                                                <i class="far fa-clock"></i> 8 June, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mb-8 small-post">
+                                        <div class="w-2/5">
+                                            <div class="mr-6">
+                                                <img class="" src="/img/media/3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-white text-sm flex justify-center flex-col text-justify">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard.
+                                            <p class="text-white text-opacity-75 mt-4 text-xs">
+                                                <i class="far fa-clock"></i> 8 June, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mb-8 small-post">
+                                        <div class="w-2/5">
+                                            <div class="mr-6">
+                                                <img class="" src="/img/media/3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-white text-sm flex justify-center flex-col text-justify">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard.
+                                            <p class="text-white text-opacity-75 mt-4 text-xs">
+                                                <i class="far fa-clock"></i> 8 June, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscribe-wrapper p-6 mt-12">
+                                    <form>
+                                        <input
+                                            class="appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                                            id="name" type="text" placeholder="Email Address">
+                                        <button
+                                            class=" text-sm hover:bg-orange-500 text-white  py-2 px-4 focus:outline-none focus:shadow-outline uppercase mt-4"
+                                            type="button">
+                                            Subscribe
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-container promo ">
+            <div class="service-header py-8">
+                <div class="flex justify-center flex-col">
+                    <div class="container mx-auto pb-5">
+                        <!-- Swiper -->
+                        <div class="relative px-10 md:px-16">
+                            <div class=" swiper-container career-carousel" style="position: unset;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="border border-solid border-white p-2 relative">
+                                            <div class="event-card">
+                                                <iframe width="100%" height="220px"
+                                                    src="https://www.youtube.com/embed/3B0YoHcxs9U?autoplay=0"
+                                                    frameborder="0" allowfullscreen="">
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="text-white absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-xs">
+                                            COVID 19 Emergency Treatment Centre at Landmark
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="border border-solid border-white p-2 relative">
+                                            <div class="event-card">
+                                                <iframe width="100%" height="220px"
+                                                    src="https://www.youtube.com/embed/ay82tnJeWko?autoplay=0"
+                                                    frameborder="0" allowfullscreen="">
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="text-white absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-xs">
+                                            COVID 19 Emergency Treatment Centre at Landmark
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="border border-solid border-white p-2 relative">
+                                            <div class="event-card ">
+                                                <iframe width="100%" height="220px"
+                                                    src="https://www.youtube.com/embed/HGpC-ebgiQw?autoplay=0"
+                                                    frameborder="0" allowfullscreen="">
+                                                </iframe>
+                                            </div>
+                                            <div
+                                                class="text-white absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-xs">
+                                                COVID 19 Emergency Treatment Centre at Landmark
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="border border-solid border-white p-2 relative">
+                                            <div class="event-card">
+                                                <iframe width="100%" height="220px"
+                                                    src="https://www.youtube.com/embed/AfCM00TVL68?autoplay=0"
+                                                    frameborder="0" allowfullscreen="">
+                                                </iframe>
+                                            </div>
+                                            <div
+                                                class="text-white absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-xs">
+                                                COVID 19 Emergency Treatment Centre at Landmark
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="border border-solid border-white p-2 relative">
+                                            <div class="event-card">
+                                                <iframe width="100%" height="220px"
+                                                    src="https://www.youtube.com/embed/HGpC-ebgiQw?autoplay=0"
+                                                    frameborder="0" allowfullscreen="">
+                                                </iframe>
+                                            </div>
+                                            <div
+                                                class="text-white absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-xs">
+                                                COVID 19 Emergency Treatment Centre at Landmark
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    @@include('template/menu.html')
+
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/media.js"></script>
+</body>
+
+</html>

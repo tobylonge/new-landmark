@@ -1,0 +1,30 @@
+.media {
+  .post {
+    img {
+      border: 2px solid $primary-color;
+    }
+  }
+  .small-post-wrapper {
+    height: 32rem;
+    padding-top: 2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .small-post {
+    img {
+      border: 2px solid $primary-color;
+    }
+  }
+
+  .subscribe-wrapper {
+    background-color: #eeeeee;
+    button {
+      background: #262d60;
+    }
+  }
+  .service-container {
+    border-top: 5px solid #c6c6c6;
+    border-bottom: 5px solid #c6c6c6;
+    min-height: auto;
+  }
+}

@@ -3,8 +3,11 @@
   border-bottom: 5px solid #c6c6c6;
 }
 .lifestyle-card {
+  transform: scale(1);
+  transition-duration: 1s;
+  transition-property: transform;
   &:hover {
-    transition-duration: 0.3s;
+    transition-duration: 1s;
     transition-property: transform;
     transform: scale(1.1);
   }

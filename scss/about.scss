@@ -12,7 +12,7 @@
     min-height: 70vh;
     position: relative;
     padding-top: 110px;
-    padding-bottom: 9rem;
+    padding-bottom: 14rem;
     @media (max-width: "768px") {
       padding-bottom: 6rem;
     }
@@ -28,8 +28,8 @@
     position: absolute;
     background-image: linear-gradient(
       270deg,
-      #060632 45%,
-      rgba(6, 6, 50, 0.2) 56%
+      #060632 3%,
+      rgba(6, 6, 50, 0.5) 56%
     );
     @media (max-width: "768px") {
       background-image: linear-gradient(
@@ -41,8 +41,8 @@
     &.left {
       background-image: linear-gradient(
         90deg,
-        #060632 45%,
-        rgba(6, 6, 50, 0.2) 56%
+        #060632 3%,
+        rgba(6, 6, 50, 0.5) 56%
       );
     }
   }
@@ -157,7 +157,6 @@
 
 .team {
   background: #060934;
-  padding-top: 88px;
   .team-banner {
     background-image: url("/img/about/team-banner.png");
     background-position: top center;
@@ -167,6 +166,7 @@
       box-shadow 0.3s;
     position: relative;
     min-height: 80vh;
+    padding-top: 88px;
 
     .team-background-overlay {
       background-color: #262d60;

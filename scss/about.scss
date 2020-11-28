@@ -157,6 +157,7 @@
 
 .team {
   background: #060934;
+  border-bottom: 5px solid #c6c6c6;
   .team-banner {
     background-image: url("/img/about/team-banner.png");
     background-position: top center;
@@ -237,7 +238,6 @@
   }
   .service-container {
     border-top: 5px solid #c6c6c6;
-    border-bottom: 5px solid #c6c6c6;
   }
   .feature-list {
     &-icon {

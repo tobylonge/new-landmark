@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  //Modal
   const openEls = document.querySelectorAll("[data-open]");
   const closeEls = document.querySelectorAll("[data-close]");
   const isVisible = "is-visible";
@@ -64,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.addEventListener("click", (e) => {
+    //if any where on the page is clicked
     if (e.target == document.querySelector(".modal.is-visible")) {
       document.querySelector(".modal.is-visible").classList.remove(isVisible);
     }

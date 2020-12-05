@@ -207,7 +207,7 @@
 
 .career {
   background: #060934;
-  padding-top: 88px;
+  // padding-top: 88px;
   .career-banner {
     background-image: url("/img/about/team-banner.png");
     background-position: top center;
@@ -216,7 +216,7 @@
     transition: background 0.3s, border 0.3s, border-radius 0.3s,
       box-shadow 0.3s;
     position: relative;
-    min-height: 50vh;
+    min-height: 70vh;
     background-position-y: center;
 
     .career-background-overlay {

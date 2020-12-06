@@ -65,6 +65,23 @@ const businessInfo = [
     title: "Enjoy the Cool Breeze of the Atlantic Ocean",
     text:
       "Landmark Village is a mixed use, state-of-the-art development on a 38,000m2 site along the Atlantic Ocean waterfront in Victoria Island, Lagos. The project will include five individual 9-storey towers and will fully embody Landmark Africa’s “Business.Leisure.Lifestyle” concept. The project is designed to be the first Lagos equivalent of The Rockefeller Centre in New York, Canary Wharf in London, Melrose Arch in Johannesburg and Victoria & Alfred Waterfront in Cape Town.",
+    items: [
+      {
+        src: "https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg",
+        w: 1200,
+        h: 600,
+      },
+      {
+        src: "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+        w: 1200,
+        h: 600,
+      },
+      {
+        src: "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg",
+        w: 1200,
+        h: 600,
+      },
+    ],
   },
   {
     id: 2,
@@ -72,6 +89,23 @@ const businessInfo = [
     title: "Enjoy the Cool Breeze of the Atlantic Ocean",
     text:
       "Landmark Village is a mixed use, state-of-the-art development on a 38,000m2 site along the Atlantic Ocean waterfront in Victoria Island, Lagos. The project will include five individual 9-storey towers and will fully embody Landmark Africa’s “Business.Leisure.Lifestyle” concept. The project is designed to be the first Lagos equivalent of The Rockefeller Centre in New York, Canary Wharf in London, Melrose Arch in Johannesburg and Victoria & Alfred Waterfront in Cape Town.",
+    items: [
+      {
+        src: "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg",
+        w: 1200,
+        h: 600,
+      },
+      {
+        src: "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+        w: 1200,
+        h: 600,
+      },
+      {
+        src: "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg",
+        w: 1200,
+        h: 600,
+      },
+    ],
   },
   {
     id: 3,
@@ -159,7 +193,9 @@ fetchInfo = (id) => {
           <div class="background-overlay">
             <div class="container mx-auto content px-4 md:px-0">
               <div class="md:w-2/5 pt-16 w-full development-slider">
-                <h2 class="text-white content-text text-xl font-semibold">${info[0].title}</h2>
+                <h2 class="text-white content-text text-xl font-semibold">${
+                  info[0].title
+                }</h2>
                 <p class="text-white content-text">${info[0].text}</p>
                 <ul class="text-white">
                   <li>
@@ -188,7 +224,21 @@ fetchInfo = (id) => {
                     <span><i class="far fa-envelope text-primary mr-2"> </i> contactus@landmarkafrica.com</span>
                     </li>
                 </ul>
+                ${
+                  info[0].items
+                    ? `<div class="flex items-center justify-between mt-8">
+                      <button
+                        class="bg-primary hover:bg-orange-500 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase"
+                        type="button"
+                        onClick="viewGallery(${id});"
+                      >
+                        View Gallery
+                      </button>
+                    </div>`
+                    : ""
+                }
             </div>
+            
         </div>
          
       </div>
@@ -204,4 +254,26 @@ fetchInfo = (id) => {
       },
     });
   }
+};
+
+viewGallery = (id) => {
+  const info = businessInfo.filter((el) => el.id === Number(id));
+  let items = info[0].items;
+  let pswpElement = document.querySelectorAll(".pswp")[0];
+
+  // define options (if needed)
+  let options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0, // start at first slide
+  };
+
+  // Initializes and opens PhotoSwipe
+  var gallery = new PhotoSwipe(
+    pswpElement,
+    PhotoSwipeUI_Default,
+    items,
+    options
+  );
+  gallery.init();
 };

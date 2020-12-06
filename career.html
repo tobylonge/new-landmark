@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Career | Landmark</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -304,49 +307,57 @@
                             <div class="relative px-10 md:px-16">
 
                                 <div class=" swiper-container career-carousel" style="position: unset;">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide cursor-pointer">
-                                            <div class="border border-solid border-white p-2">
-                                                <div class="event-card">
-                                                    <img src="img/home/event-2.jpg" alt="">
+                                    <div class="swiper-wrapper my-gallery" itemscope>
+                                        <li id="1" class="swiper-slide" itemprop="associatedMedia" itemscope>
+                                            <a id="first" title="click to zoom-in" href="img/home/event-2.jpg"
+                                                itemprop="contentUrl" data-size="1200x600">
+                                                <div class="border border-solid border-white p-2">
+                                                    <div class="event-card">
+                                                        <img src="img/home/event-2.jpg" alt="" itemprop="thumbnail">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide cursor-pointer">
-                                            <div class="border border-solid border-white p-2">
-                                                <div class="event-card">
-                                                    <img src="img/home/event-4.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li id="2" class="swiper-slide" itemprop="associatedMedia" itemscope>
+                                            <a id="first" title="click to zoom-in" href="img/home/event-4.jpg"
+                                                itemprop="contentUrl" data-size="1200x600">
+                                                <div class="border border-solid border-white p-2">
+                                                    <div class="event-card">
+                                                        <img src="img/home/event-4.jpg" alt="" itemprop="thumbnail">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide cursor-pointer">
-                                            <div class="border border-solid border-white p-2">
-                                                <div class="event-card">
-                                                    <img src="img/home/event-3.jpeg" alt="">
+                                            </a>
+                                        </li>
+                                        <li id="3" class="swiper-slide" itemprop="associatedMedia" itemscope>
+                                            <a id="first" title="click to zoom-in" href="img/home/event-3.jpeg"
+                                                itemprop="contentUrl" data-size="1200x600">
+                                                <div class="border border-solid border-white p-2">
+                                                    <div class="event-card">
+                                                        <img src="img/home/event-3.jpeg" alt="" itemprop="thumbnail">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide cursor-pointer">
-                                            <div class="border border-solid border-white p-2">
-                                                <div class="event-card">
-                                                    <img src="img/home/event-3.jpeg" alt="">
+                                            </a>
+                                        </li>
+                                        <li id="4" class="swiper-slide" itemprop="associatedMedia" itemscope>
+                                            <a id="first" title="click to zoom-in" href="img/home/event-5.jpeg"
+                                                itemprop="contentUrl" data-size="1200x600">
+                                                <div class="border border-solid border-white p-2">
+                                                    <div class="event-card">
+                                                        <img src="img/home/event-5.jpeg" alt="" itemprop="thumbnail">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide cursor-pointer">
-                                            <div class="border border-solid border-white p-2">
-                                                <div class="event-card">
-                                                    <img src="img/home/event-5.jpeg" alt="">
+                                            </a>
+                                        </li>
+                                        <li id="5" class="swiper-slide" itemprop="associatedMedia" itemscope>
+                                            <a id="first" title="click to zoom-in" href="img/home/event-6.jpeg"
+                                                itemprop="contentUrl" data-size="1200x600">
+                                                <div class="border border-solid border-white p-2">
+                                                    <div class="event-card">
+                                                        <img src="img/home/event-6.jpeg" alt="" itemprop="thumbnail">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide cursor-pointer">
-                                            <div class="border border-solid border-white p-2">
-                                                <div class="event-card">
-                                                    <img src="img/home/event-6.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
+                                            </a>
+                                        </li>
                                     </div>
                                     <!-- Add Arrows -->
                                     <div class="swiper-button-next"></div>
@@ -403,11 +414,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Add Arrows -->
                     <div class="swiper-button-next gallery-button-next"></div>
                     <div class="swiper-button-prev gallery-button-next"></div>
                 </div>
             </div>
+
         </div>
 
 
@@ -418,10 +429,21 @@
 
         <!-- footer -->
         @@include('template/footer.html')
+        @@include('template/lightbox.html')
         @@include('template/menu.html')
 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js">
+        </script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js">
+        </script>
         <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
         </script>
+
+
+
+
+
 
         <script src="js/main.js"></script>
         <script src="js/career.js"></script>

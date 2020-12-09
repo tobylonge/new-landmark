@@ -57,6 +57,9 @@
   opacity: 0.86;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   min-height: 100vh;
+  &.auto {
+    min-height: auto;
+  }
 }
 
 .element-divider {

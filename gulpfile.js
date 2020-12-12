@@ -26,6 +26,10 @@ function moveFiles() {
   return src(["./img/*", "./img/**/*"]).pipe(dest("build/img"));
 }
 
+function moveDoc() {
+  return src(["./documentation/*"]).pipe(dest("build/documentation"));
+}
+
 function jsTask() {
   return src("./js/*.js")
     .pipe(
@@ -73,6 +77,7 @@ function watchTask() {
 exports.default = series(
   clean,
   moveFiles,
+  moveDoc,
   cssTask,
   jsTask,
   includefileTask,

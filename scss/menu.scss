@@ -1,3 +1,9 @@
+.hfe-nav-menu-icon {
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
 .menu-nav {
   position: fixed;
   top: 0;
@@ -14,23 +20,12 @@
     bottom: 0;
     position: absolute;
     z-index: 12;
-    background-color: rgba(38, 45, 96, 0.77);
+    background-color: rgba(0, 0, 0, 0.77);
     padding: 0 1rem;
     overflow-y: scroll;
+    color: #fff;
   }
 }
 .close-btn {
   cursor: pointer;
 }
-.dropdown-menu {
-  transition: all 0.3s ease 0s;
-  background-color: rgba(38, 45, 96, 0.77);
-  padding: 0 1rem;
-  //   display: none;
-}
-.menu-item a:hover {
-  color: $primary-color;
-}
-// .menu-item a:hover + .dropdown-menu {
-//   display: block;
-// }

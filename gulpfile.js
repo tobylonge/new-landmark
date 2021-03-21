@@ -30,6 +30,10 @@ function moveDoc() {
   return src(["./documentation/*"]).pipe(dest("build/documentation"));
 }
 
+function moveFont() {
+  return src(["./font/*"]).pipe(dest("build/font"));
+}
+
 function jsTask() {
   return src("./js/*.js")
     .pipe(
@@ -71,13 +75,17 @@ function watchTask() {
   watch(["./*.html", "./template/*.html"], moveFiles);
   watch("./js/*.js", jsTask);
   watch(["./*.html", "./template/*.html"], includefileTask);
-  watch(["./*.html", "./template/*.html"]).on("change", browserSync.reload);
+  watch(["./*.html", "./template/*.html", "./scss/*.scss"]).on(
+    "change",
+    browserSync.reload
+  );
 }
 
 exports.default = series(
   clean,
   moveFiles,
   moveDoc,
+  moveFont,
   cssTask,
   jsTask,
   includefileTask,

@@ -1,35 +1,61 @@
-$primary-color: #ff8300;
-$secondary-color: #2d36b4;
-$dark-bg: #262d61;
+@import url("../font/gotham.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$btn-prim-color: rgba(245, 130, 41, 0.42);
+$btn-hov-color: rgba(245, 130, 41, 0.8);
+$btn-light-color: rgba(245, 130, 41, 0.08);
+$btn-light-hov-color: rgba(245, 130, 41, 0.2);
+$primary-text: #18214a;
+$secondary-text: #707070;
+
+* {
+  font-family: "GothamPro";
+  font-weight: 200;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+body {
+  display: block;
+  overflow-x: hidden;
+}
+.leading-11 {
+  line-height: 3rem;
+}
 
 .text-primary {
-  color: $primary-color;
+  color: $primary-text;
 }
 .text-secondary {
-  color: $secondary-color;
+  color: $secondary-text;
 }
 
+.btn {
+  @apply font-medium py-2 px-10 rounded text-xs;
+}
+.btn-primary {
+  background: $btn-prim-color;
+}
+.btn-primary:hover {
+  background: $btn-hov-color;
+}
+.btn-light {
+  background: $btn-light-color;
+}
+.btn-light:hover {
+  background: $btn-light-hov-color;
+}
 .bg-primary {
-  background: $primary-color;
-}
-.bg-secondary {
-  background: $secondary-color;
+  background: #f58229;
 }
 
-.bg-dark {
-  background: $dark-bg;
+.mr-25 {
+  margin-right: 8rem;
 }
-.btn-default {
-  background: $primary-color;
-  padding: 0.8rem 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease-in-out 0s;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+.ml-25 {
+  margin-left: 8rem;
 }
 
 @media (min-width: 1280px) {

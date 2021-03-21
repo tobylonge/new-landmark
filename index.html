@@ -6,33 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landmark |</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<style>
-    .swiper-pagination-bullet {
-        height: 10px;
-        width: 10px;
-        background: #ffffff;
-        opacity: 1;
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: #f5a127;
-    }
-
-    .swiper-container-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
-        bottom: 30px;
-    }
-
-    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 0 10px;
-    }
-</style>
 
 <body>
 
@@ -40,247 +17,221 @@
     @@include('template/header.html')
 
     <!-- main -->
-
-    <!-- Slider -->
-    <div class="swiper-container home-carousel">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slider" style="background-image:url(img/home/banner-1.jpeg)">
-                <div class="background-overlay">
-                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
-                        <div class="container mx-auto px-4 md:px-0">
-                            <h2 class="text-xl md:text-2xl font-medium text-white small-header">THE EVOLUTION OF
-                            </h2>
-                            <h1 class="text-3xl md:text-4xl font-bold text-primary">REAL ESTATE</h1>
-                            <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                dapibus leo.</p>
-                        </div>
-                    </div>
+    <div class="home-banner flex items-center justify-center">
+        <div class="home-content text-white text-center">
+            <h1 class="text-3xl lg:text-5xl text-center mb-10 leading-11">Everything you need is at <br />
+                your doorstep</h1>
+            <button class="btn btn-primary text-white">
+                Explore
+            </button>
+        </div>
+    </div>
+    <div class="landmark-overview">
+        <div class="container mx-auto px-4 lg:px-0">
+            <h2 class="text-3xl lg:text-5xl leading-11 mt-20 text-primary">The Landmark <br />Waterview </h2>
+            <div class="flex my-10 flex-col lg:flex-row">
+                <div class="lg:w-2/5 lg:mr-12 mb-4 lg:mb-0">
+                    <p class="text-base text-secondary">
+                        The Landmark Waterview apartments is the first opportunity to enjoy living at Landmark Lagos.
+                        With
+                        commanding views of the Atlantic and the Lagos skyline, the Landmark Waterview apartments is a
+                        bold
+                        new
+                        vision for urban living in the heart of Victoria Island.
+                        This proposed exclusive residential development offers 25 floors of exquisite apartments and 6
+                        floors of
+                        secure indoor parking.
+                    </p>
+                </div>
+                <div class="lg:w-2/5 lg:ml-12">
+                    <p class="text-base text-secondary">With an attractive high street just below, residents can relish
+                        in the collection of facilities
+                        in
+                        and around the tower for their comfort and convenience.
+                        There is a choice of 139 units comprising of studio, and a range of 1 to 5-bedroom apartments
+                        all
+                        delivered in grey shell scheme</p>
                 </div>
             </div>
-            <div class="swiper-slide slider" style="background-image:url(img/home/banner-2.jpg)">
-                <div class="background-overlay">
-                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
-                        <div class="container mx-auto px-4 md:px-0">
-                            <h2 class="text-xl md:text-2xl font-medium text-white small-header">STATE OF THE ACT
-                                OCCASIONS
-                            </h2>
-                            <h1 class="text-3xl md:text-4xl font-bold text-primary">EVENT CENTER</h1>
-                            <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                dapibus leo.</p>
-                        </div>
-                    </div>
-                </div>
-
+            <button class="btn btn-primary uppercase text-black">
+                DOWNLOAD BROCHURE
+            </button>
+        </div>
+        <div class="preview flex min-h-screen my-10 flex-col lg:flex-row">
+            <div class="lg:w-1/2 left lg:mr-4 pb-8">
+                <img src="img/home/bEDROOM-1A.jpg" alt="">
             </div>
-            <div class="swiper-slide slider" style="background-image:url(img/home/banner-3.jpg)">
-                <div class="background-overlay">
-                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
-                        <div class="container mx-auto px-4 md:px-0">
-                            <h2 class="text-xl md:text-2xl font-medium text-white small-header">BUSINESS SHOWCASE
-                                MASTERCLASS
-                            </h2>
-                            <h1 class="text-3xl md:text-4xl font-bold text-primary">SALES EXHIBITION</h1>
-                            <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                dapibus leo.</p>
-                        </div>
-                    </div>
+            <div class="lg:w-1/2 lg:ml-4 px-4 lg:px-0">
+                <div class="lg:w-4/5 mx-auto lg:mr-24 mb-10">
+                    <h2 class="text-3xl lg:text-5xl leading-11 mt-10 text-primary">Get ahead of the curve and secure
+                        your very own
+                        piece
+                        of urban bliss</h2>
+                    <p class="text-base text-secondary my-10 mr-10">The building is designed to offer peace and
+                        seclusion,
+                        since
+                        the
+                        actual living units are placed 6 floors above the life and noise of the street level</p>
+                    <button class="btn btn-light uppercase text-black">
+                        CHECK AVAILABILITY
+                    </button>
                 </div>
-
+                <div class="img-wrapper">
+                    <img src="/img/home/BEDROOM-2A.jpg" alt="bedroom image">
+                </div>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
 
-    <!-- service content -->
-    <div class="service-container">
-        <div class="service-header py-8">
-            <div class="container mx-auto px-4 md:px-0 flex min-h-screen items-center md:flex-row flex-col-reverse">
-                <div class="w-full md:w-1/2 flex justify-center flex-wrap">
-                    <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-0">
-                        <div><img src="img/home/lifestyle-1.jpeg" alt="" class="h-32 md:h-auto">
-                            <p class="absolute text-white text-center text-xl left-0 right-0 uppercase">Business</p>
-                            <div class="bg-primary w-100 h-2 relative">
-                                <div class="absolute bg-dark h-full w-1/12 ml-4">
+    <div class="experience-landmark">
+        <div class="container mx-auto">
+            <h2 class="text-3xl lg:text-5xl leading-11 mt-20 text-primary mb-10 ml-4 lg:ml-0">Experience <br />Landmark
+            </h2>
+            <div class="img-wrapper">
+                <div class="flex">
+                    <div class="w-2/5">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/PANO0001.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white uppercase">Work</p>
+                            </div>
+                        </a>
 
-                                </div>
+                    </div>
+                    <div class="w-3/5">
+                        <div class="flex flex-wrap">
+                            <div class="w-1/2">
+                                <a href="" class="relative block img-link">
+                                    <img src="/img/home/eat.jpg" alt="">
+                                    <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                        <p class="text-white uppercase">Eat</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="w-1/2">
+                                <a href="" class="relative block img-link">
+                                    <img src="/img/home/stay.jpg" alt="">
+                                    <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                        <p class="text-white uppercase">STAY</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="w-1/2">
+                                <a href="" class="relative block img-link">
+                                    <img src="/img/home/shop.jpg" alt="">
+                                    <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                        <p class="text-white uppercase">Shop</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="w-1/2">
+                                <a href="" class="relative block img-link">
+                                    <img src="/img/home/event.jpg" alt="">
+                                    <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                        <p class="text-white uppercase">Event</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-
-                    </a>
-                    <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-0"">
-                        <div>
-                            <img src=" img/home/lifestyle-2.jpeg" alt="" class="h-32 md:h-auto">
-                        <p class="absolute text-white text-center text-xl left-0 right-0 uppercase">LEISURE</p>
-                        <div class="bg-primary w-100 h-2 relative">
-                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
-                        </div>
+                    </div>
                 </div>
-                </a>
-                <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-0">
-                    <div>
-                        <img src=" img/home/lifestyle-3.png" alt="" class="h-32 md:h-auto">
-                        <p class="absolute text-white text-center text-xl left-0 right-0 uppercase">EVENT CENTER</p>
-                        <div class="bg-primary w-100 h-2 relative">
-                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-12">
-                    <div>
-                        <img src="img/home/lifestyle-4.jpeg" alt="" class="h-32 md:h-auto">
-                        <p class="absolute text-white text-center text-xl left-0 right-0 uppercase">LIFESTYLE</p>
-                        <div class="bg-primary w-100 h-2 relative">
-                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-12">
-                    <div>
-                        <img src="img/home/lifestyle-5.jpeg" alt="" class="h-32 md:h-auto">
-                        <p class="absolute text-white text-center text-xl left-0 right-0 uppercase">HOSPITALITY</p>
-                        <div class="bg-primary w-100 h-2 relative">
-                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="w-full md:w-1/2 md:text-right text-white md:ml-12">
-                <h2 class="md:text-right text-xl md:text-5xl text-primary font-medium">Business, Leisure &</h2>
-                <h2 class="md:text-right text-3xl md:text-7xl font-bold text-white leading-none mb-4">Lifestyle
-                </h2>
-                <p class="md:text-right text-sm border-b border-white border-solid pb-4 mb-8 inline-flex">At The
-                    Most
-                    Prestigious
-                    Development <br />on the Shorelines of Lagos</p>
-                <p class="md:text-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been
-                    the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book.</p>
-                <p class="md:text-right">It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Slider main container -->
-    <div class="service-container promo ">
-        <div class="service-header py-8">
-            <div class="flex min-h-screen justify-center flex-col">
-                <div class="container mx-auto px-4 md:px-0">
-                    <h2 class="text-xl md:text-3xl font-medium text-white small-header">
-                        EVENTS &
-                    </h2>
-                    <h1 class="text-3xl md:text-5xl font-bold text-primary">PROMO</h1>
-                </div>
-                <div class="element-divider"></div>
-                <div class="container mx-auto pb-5">
-                    <!-- Swiper -->
-                    <div class="relative px-10 md:px-16">
-                        <div class=" swiper-container promo-carousel" style="position: unset;">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="border border-solid border-white p-2">
-                                        <div class="event-card">
-                                            <img src="img/home/event-1.png" alt="">
-                                        </div>
-                                        <div class="text-center pt-6">
-                                            <h2 class="text-primary mb-4 font-medium">Landmark Loyalty Reward System
-                                            </h2>
-                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply</p>
-                                            <a class="text-primary inline-flex mb-4 cursor-pointer"
-                                                data-open="modal1">Read
-                                                More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="border border-solid border-white p-2">
-                                        <div class="event-card">
-                                            <img src="img/home/event-2.jpg" alt="">
-                                        </div>
-                                        <div class="text-center pt-6">
-                                            <h2 class="text-primary mb-4 font-medium">Landmark Retail Boulevard Launch
-                                            </h2>
-                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply</p>
-                                            <a class="text-primary inline-flex mb-4 cursor-pointer"
-                                                data-open="modal2">Read
-                                                More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="border border-solid border-white p-2">
-                                        <div class="event-card">
-                                            <img src="img/home/event-3.jpeg" alt="">
-                                        </div>
-                                        <div class="text-center pt-6">
-                                            <h2 class="text-primary mb-4 font-medium">Watch Movies at Filmhouse for just
-                                                1k… Mon – Thurs
-                                            </h2>
-                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply</p>
-                                            <a class="text-primary inline-flex mb-4 cursor-pointer"
-                                                data-open="modal1">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="border border-solid border-white p-2">
-                                        <div class="event-card">
-                                            <img src="img/home/event-4.jpg" alt="">
-                                        </div>
-                                        <div class="text-center pt-6">
-                                            <h2 class="text-primary mb-4 font-medium">Landmark Beach, fun, games and
-                                                relaxation centre
-                                            </h2>
-                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply</p>
-                                            <a class="text-primary inline-flex mb-4 cursor-pointer"
-                                                data-open="modal2">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="flex">
+                    <div class="w-1/2 flex-1">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/play.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white uppercase">PLAY</p>
                             </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
+                        </a>
+
+                    </div>
+                    <div class="w-1/2 flex-1">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/unwind.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white uppercase">UNWIND</p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="amenities flex mt-20 flex-col-reverse lg:flex-row px-4 lg:px-0">
+        <div class="lg:w-3/5 lg:mr-24 mt-8 lg:mt-0">
+            <img class="object-cover lg:h-full" src="/img/home/gym.jpg" alt="">
+        </div>
+        <div class="lg:w-2/5 lg:mr-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">Amenities</h2>
+            <p class="text-base text-secondary my-10 font-hairline">Immerse yourself with an array of amenities and
+                activate your
+                lifestyle with waterview full fledged leisure and entertainment floor of it’s own with on-site valet
+                service
+            </p>
+            <img src="/img/home/amenities.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="citizen py-20 lg:h-screen items-center justify-center">
+        <div class="content lg:h-full px-4 lg:px-0 py-8 lg:py-0">
+            <div class="mx-auto lg:h-full flex">
+                <div class="lg:w-2/5 flex items-center justify-center lg:h-full lg:ml-24">
+                    <div>
+                        <h2 class="text-3xl lg:text-5xl leading-11 text-white mb-10">Become a citizen</h2>
+                        <p class="text-base mt-10 mb-4 text-white">
+                            The Landmark Citizen’s Rewards card is your passport to more, every naira counts
+                        </p>
+                        <ul class="text-sm font-hairline text-white opacity-75">
+                            <li>» Complimentary membership to the Landmark beach</li>
+                            <li>» Discounts on retailers within the Landmark Ecosystem</li>
+                            <li>» Access to selected events within the Landmark Ecosystem</li>
+                            <li>» Direct access to the Landmark loyalty reward program</li>
+                            <li>» Discounted use of event spaces/rental</li>
+                            <li>» Access to all private and VIP areas within the Landmark Ecosystem</li>
+                            <li>» Free quarterly health checks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-3/5 relative hidden lg:block">
+                    <img src="/img/home/loyalty.png" alt="" class="transform -rotate-12 absolute">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="get-in-touch flex mt-20 items-center justify-center flex-col-reverse lg:flex-row px-4 lg:px-0">
+        <div class="lg:w-3/5 lg:mr-24 mt-8 lg:mt-0">
+            <img class="object-cover lg:h-full" src="/img/home/get-in-touch.jpg" alt="">
+        </div>
+        <div class="lg:w-2/5 lg:mr-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">Interested? <br /> Get in touch Now</h2>
+            <p class="text-base text-secondary my-10 font-hairline">
+                Fill in our form and one of our expert team members will be in touch with you as soon as possible
+            </p>
+            <form class="w-full max-w-lg">
+                <div class="flex flex-wrap mb-6">
+                    <div class="w-full px-3">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="phone-number" type="number" placeholder="Enter your Phone Number">
+                    </div>
+                </div>
+                <div class="flex flex-wrap mb-6">
+                    <div class="w-full px-3">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="email" type="email" placeholder="Enter your Email">
+                    </div>
+                </div>
+                <button class="btn btn-primary text-white uppercase">
+                    Submit
+                </button>
+            </form>
+        </div>
+
     </div>
 
 
@@ -288,14 +239,7 @@
     @@include('template/footer.html')
     <!-- Menu -->
     @@include('template/menu.html')
-    <!-- Modal -->
-    @@include('template/modal.html')
-
-    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
-    </script>
-
     <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
 </body>
 
 </html>

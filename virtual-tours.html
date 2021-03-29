@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landmark | Virtual Tours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html', {
+    "page": "virtual",
+    "bg": true
+    })
+
+    <div class="experience-landmark">
+        <div class="container mx-auto">
+            <div class="img-wrapper lg:w-4/5 px-4 lg:px-0 mx-auto mt-32 mb-16">
+                <div class="">
+                    <a href="" class="relative block img-link">
+                        <img src="/img/home/virtual_1.jpg" alt="">
+                        <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                            <p class="text-white lg:text-3xl font-hairline">Studio/1 bath</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="flex mt-8">
+                    <div class="w-1/2 mr-2">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/virtual_2.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white lg:text-3xl font-hairline">1 bed/1 bath</p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="w-1/2 ml-2">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/virtual_3.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white lg:text-3xl font-hairline">2 bed/2 bath</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="flex mt-8">
+                    <div class="w-1/2 mr-2">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/virtual_4.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white lg:text-3xl font-hairline">4 bed/3 bath</p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="w-1/2 ml-2">
+                        <a href="" class="relative block img-link">
+                            <img src="/img/home/virtual_5.jpg" alt="">
+                            <div class="overlay absolute inset-0 flex items-center justify-center py-4">
+                                <p class="text-white lg:text-3xl font-hairline">3 bed/2 bath</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    <!-- Menu -->
+    @@include('template/menu.html')
+    <script src="js/main.js"></script>
+</body>
+
+</html>

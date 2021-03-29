@@ -1,3 +1,14 @@
 header {
   background-color: rgba(32, 32, 32, 0.5);
+  .header-right {
+    a {
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
 }

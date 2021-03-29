@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landmark | About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html', {
+    "page": "about"
+    })
+
+    <!-- main -->
+    <div class="home-banner flex items-center justify-center bg2">
+        <div class="home-content text-white text-center z-10">
+            <h1 class="text-3xl lg:text-5xl text-center mb-10 leading-11">Step outside, feel the warm
+                sun and cool sea breeze
+                gently put your mind at ease</h1>
+        </div>
+    </div>
+
+    <div class="amenities flex mt-20 flex-col-reverse lg:flex-row px-4 lg:px-0 items-center">
+        <div class="lg:w-2/5 lg:ml-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">Benefits of living at the Landmark
+                Waterview apartments</h2>
+            <ul class="text-sm font-hairline text-secondary">
+                <li class="mb-4">» Access to exclusive lifestyle amenities handpicked for your indulgence that caters
+                    for your
+                    business, shopping, dining and </li>
+                <li class="mb-4">» Spacious and bright, each room has been designed to maximise space and showcase the
+                    picturesque
+                    views.</li>
+                <li class="mb-4">» Concierge service and dedicated parking slots from Level 4 to 6</li>
+                <li class="mb-4">» Private high-speed elevator for the top tier residents</li>
+                <li class="mb-4">» All apartments have a private balcony. The penthouses have double height balconies
+                    and double
+                    height balconies and conservatories looking out to the Atlantic and Five Cowrie Creek.</li>
+            </ul>
+        </div>
+        <div class="lg:w-3/5 mt-8 lg:mt-0 lg:ml-24 ">
+            <img class="object-cover lg:h-full" src="/img/home/about_1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="amenities flex mt-20 flex-col-reverse lg:flex-row px-4 lg:px-0 items-center">
+        <div class="lg:w-3/5 lg:mr-24 mt-8 lg:mt-0">
+            <img class="object-cover lg:h-full" src="/img/home/about_2.jpg" alt="">
+        </div>
+        <div class="lg:w-2/5 lg:mr-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">Amenities and features</h2>
+            <ul class="text-sm font-hairline text-secondary">
+                <li class="mb-4">» State of the art elevator system with BMS to minimise wait time with AI driven
+                    program to “learn” usage patterns</li>
+                <li class="mb-4">» Unique welcome and leisure experience at the Club Lounge</li>
+                <li class="mb-4">» Intelligently controlled kitchen and bathroom ventilation system</li>
+                <li class="mb-4">» Dedicated workers’ quarters</li>
+                <li class="mb-4">» Well-equipped modern fitness suite</li>
+                <li class="mb-4">» CCTV and 24 hours concierge service to cater to special requirements</li>
+                <li class="mb-4">» Integrated 4 tier security perimeter for residents at the parking and entry lobby
+                </li>
+                <li class="mb-4">» Integrated fire detection system</li>
+                <li class="mb-4">» High efficiency, low energy independent HVAC system for each unit</li>
+                <li class="mb-4">» Pressure controlled uninterrupted water supply</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="flex items-center justify-center mt-20">
+        <img src="/img/home/map-01.jpg" alt="">
+    </div>
+    <div
+        class="get-in-touch flex mt-20 items-center justify-center flex-col lg:flex-row px-4 lg:px-0 py-8 lg:py-0 bg-dark-blue">
+        <div class="lg:w-2/5 lg:ml-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 mb-10 text-white">Interested? <br /> Get in touch
+                Now</h2>
+            <p class="text-base text-white my-10 font-hairline">
+                Fill in our form and one of our expert team members will be in touch with you as soon as possible
+            </p>
+            <form class="w-full max-w-lg">
+                <div class="flex flex-wrap mb-6 -mx-3 ">
+                    <div class="w-full px-3">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="phone-number" type="number" placeholder="Enter your Phone Number">
+                    </div>
+                </div>
+                <div class="flex flex-wrap mb-6 -mx-3">
+                    <div class="w-full px-3">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="email" type="email" placeholder="Enter your Email">
+                    </div>
+                </div>
+                <button class="btn btn-primary text-white uppercase">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="lg:w-3/5 mt-8 lg:mt-0">
+            <img class="object-cover lg:h-full" src="/img/home/contact_2.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    <!-- Menu -->
+    @@include('template/menu.html')
+    <script src="js/main.js"></script>
+</body>
+
+</html>

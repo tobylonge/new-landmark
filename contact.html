@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landmark | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html', {
+    "page": "contact"
+    })
+
+    <div class="container mx-auto">
+        <div class="get-in-touch flex my-16 lg:my-32 items-center justify-center flex-col lg:flex-row px-4 lg:px-0">
+            <div class="lg:w-1/2 lg:mr-8 mt-8 lg:mt-0">
+                <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">Contact Details</h2>
+                <p class="text-base text-secondary my-10 font-hairline">
+                    Landmark Towers, 5B Water Corporation Road, <br /> Victoria Island Annex, Lagos, Nigeria
+                </p>
+                <hr class="my-8" />
+                <p class="text-base text-secondary font-hairline">
+                    Email marketing@landmarkafrica.com
+                </p>
+                <p class="text-base text-secondary font-hairline">www.LandmarkAfrica.com</p>
+                <p class="text-base text-secondary font-hairline">Phone +234 (0) 818 660 0000 | +234 (0) 805 333 3333
+                </p>
+            </div>
+            <div class="lg:w-1/2 lg:ml-8 mt-16 lg:mt-0">
+                <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">Online Inquiry</h2>
+                <p class="text-base text-secondary my-10 font-hairline">
+                    Fill in our form and one of our expert team members will be in touch with you as soon as possible
+                </p>
+                <form class="w-full max-w-lg">
+                    <div class="flex flex-wrap mb-6 -mx-3">
+                        <div class="w-full px-3">
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="full-name" type="text" placeholder="Enter your Full Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-6 -mx-3 ">
+                        <div class="w-full px-3">
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="email" type="email" placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-6 -mx-3">
+                        <div class="w-full px-3">
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="phone-number" type="number" placeholder="Enter your Phone Number">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-6 -mx-3">
+                        <div class="w-full px-3">
+                            <textarea
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary text-white uppercase">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    <!-- Menu -->
+    @@include('template/menu.html')
+    <script src="js/main.js"></script>
+</body>
+
+</html>

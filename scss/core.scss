@@ -61,6 +61,11 @@ body {
   margin-left: 8rem;
 }
 
+.divider {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+  margin-top: 2rem;
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1180px;

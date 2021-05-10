@@ -37,9 +37,11 @@ body {
 }
 .btn-primary {
   background: $btn-prim-color;
+  border: 1px solid $btn-light-hov-color;
 }
 .btn-primary:hover {
   background: $btn-hov-color;
+  border: 1px solid $btn-hov-color;
 }
 .btn-light {
   background: $btn-light-color;
@@ -47,6 +49,14 @@ body {
 .btn-light:hover {
   background: $btn-light-hov-color;
 }
+.btn-outline {
+  border: 1px solid $secondary-text;
+}
+.btn-outline:hover {
+  border: 1px solid $secondary-text;
+  background: rgba(112, 112, 112, 0.2);
+}
+
 .bg-primary {
   background: #f58229;
 }

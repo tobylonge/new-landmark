@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landmark | FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html', {
+    "page": "faq"
+    })
+
+    <div class="container mx-auto flex justify-between items-center my-16 lg:my-32">
+        <div class="w-full mx-auto">
+            <div class="shadow-md">
+                <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label One</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                        <p class="p-5">Test</p>
+                        <div class="w-full mx-auto">
+                            <div class="shadow-md">
+                                <div class="tab w-full overflow-hidden border-t">
+                                    <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label
+                                        inside
+                                        One</label>
+                                    <div
+                                        class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Tenetur, architecto,
+                                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                                            obcaecati soluta
+                                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                                    </div>
+                                </div>
+                                <div class="tab w-full overflow-hidden border-t">
+                                    <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+                                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Label
+                                        inside Two</label>
+                                    <div
+                                        class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Tenetur, architecto,
+                                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                                            obcaecati soluta
+                                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Label Two</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto,
+                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta
+                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+                <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Label Three</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto,
+                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta
+                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="cd-accordion margin-top-lg margin-bottom-lg">
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <input class="cd-accordion__input" type="checkbox" name="group-1" id="group-1">
+                <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-1"><span>Group
+                        1</span></label>
+
+                <ul class="cd-accordion__sub cd-accordion__sub--l1">
+                    <li class="cd-accordion__item cd-accordion__item--has-children">
+                        <input class="cd-accordion__input" type="checkbox" name="sub-group-1" id="sub-group-1">
+                        <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-1"><span>Sub
+                                Group 1</span></label>
+
+                        <ul class="cd-accordion__sub cd-accordion__sub--l2">
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                </ul>
+            </li>
+
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a>
+            </li>
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a>
+            </li>
+        </ul> <!-- cd-accordion -->
+    </div>
+
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    <!-- Menu -->
+    @@include('template/menu.html')
+    <script src="js/main.js"></script>
+</body>
+
+</html>

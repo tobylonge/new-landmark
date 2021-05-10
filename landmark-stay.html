@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landmark | Landmark-Ecosysystem | Stay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html', {
+    "page": "ecosystem"
+    })
+
+    <!-- main -->
+    <div class="home-banner flex items-center justify-center bg6">
+        <div class="home-content text-white text-center z-10">
+            <h1 class="text-3xl lg:text-5xl text-center mb-10 leading-11">Enjoy breath-taking and alluring views of the
+                <br />
+                Atlantic from the comfort of your room
+            </h1>
+        </div>
+    </div>
+
+    <div class="amenities flex mt-20 flex-col-reverse lg:flex-row px-4 lg:px-0 items-center">
+        <div class="lg:w-2/5 lg:ml-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">
+                Perfectly Positioned</h2>
+            <p class="font-hairline text-secondary">
+                Landmark hotel promises to make your stay in the ecosystem a unique and memorable experience.
+            </p>
+        </div>
+        <div class="lg:w-3/5 mt-8 lg:mt-0 lg:ml-24 ">
+            <img class="object-cover lg:h-full" src="/img/ecosystem/stay-1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="amenities flex mt-20 flex-col-reverse lg:flex-row px-4 lg:px-0 items-center">
+        <div class="lg:w-3/5 lg:mr-24 mt-8 lg:mt-0">
+            <img class="object-cover lg:h-full" src="/img/ecosystem/stay-2.jpg" alt="">
+        </div>
+        <div class="lg:w-2/5 lg:mr-24">
+            <h2 class="text-3xl lg:text-5xl leading-11 text-primary mb-10">
+                An exceptional world at Landmark
+            </h2>
+            <img src="/img/ecosystem/stay-logo.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="mt-8 mb-16 mx-4 lg:mx-0">
+        <div class="swiper-container eat-carousel amenities flex lg:px-0 items-stretch">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-3.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-4.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-5.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-6.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto flex">
+                    <img class="object-cover lg:h-full" src="/img/ecosystem/stays-7.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Arrows -->
+        </div>
+        <div class="container mx-auto">
+            <div class="arrow-wrapper flex justify-end mt-4">
+                <div class="button button-prev2 mr-2 swiper-button-disabled"><i class="fas fa-arrow-left"></i></div>
+                <div class="button button-next2 ml-2"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="get-in-touch flex mt-10 items-center justify-center flex-col lg:flex-row px-4 lg:px-0 py-8 lg:py-0 bg-dark-blue">
+        <div class="lg:w-2/5 lg:ml-24 lg:mr-8">
+            <h2 class="text-3xl lg:text-5xl leading-11 mb-10 text-white">Interested? <br /> Get in touch
+                Now</h2>
+            <p class="text-base text-white my-10 font-hairline">
+                Fill in our form and one of our expert team members will be in touch with you as soon as possible
+            </p>
+            <form class="w-full max-w-lg">
+                <div class="flex flex-wrap mb-6 -mx-3 ">
+                    <div class="w-full px-3">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="phone-number" type="number" placeholder="Enter your Phone Number">
+                    </div>
+                </div>
+                <div class="flex flex-wrap mb-6 -mx-3">
+                    <div class="w-full px-3">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="email" type="email" placeholder="Enter your Email">
+                    </div>
+                </div>
+                <button class="btn btn-primary text-white uppercase">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="lg:w-3/5 mt-8 lg:mt-0">
+            <img class="object-cover lg:h-full" src="/img/home/contact_stay.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <!-- ecosystem -->
+    @@include('template/ecosystem.html')
+
+    <!-- footer -->
+    @@include('template/footer.html')
+    <!-- Menu -->
+    @@include('template/menu.html')
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/eat.js"></script>
+</body>
+
+</html>

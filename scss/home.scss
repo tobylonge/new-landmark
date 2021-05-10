@@ -29,7 +29,72 @@
     }
   }
   &.bg4 {
-    background-image: url("/img/ecosystem/banner.jpg");
+    background-image: url("/img/ecosystem/eatery.jpg");
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(24, 33, 74, 0.53);
+      content: "";
+    }
+  }
+  &.bg5 {
+    background-image: url("/img/ecosystem/event.jpg");
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(24, 33, 74, 0.53);
+      content: "";
+    }
+  }
+  &.bg6 {
+    background-image: url("/img/ecosystem/stay.jpg");
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(24, 33, 74, 0.53);
+      content: "";
+    }
+  }
+  &.bg7 {
+    background-image: url("/img/ecosystem/shop.jpg");
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(24, 33, 74, 0.53);
+      content: "";
+    }
+  }
+  &.bg8 {
+    background-image: url("/img/ecosystem/unwind.jpg");
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(24, 33, 74, 0.53);
+      content: "";
+    }
+  }
+  &.bg9 {
+    background-image: url("/img/ecosystem/play.jpg");
     position: relative;
     &:before {
       position: absolute;

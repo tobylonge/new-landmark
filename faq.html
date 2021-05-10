@@ -18,104 +18,612 @@
     "page": "faq"
     })
 
-    <div class="container mx-auto flex justify-between items-center my-16 lg:my-32">
+    <div class="container mx-auto flex my-16 lg:my-32 faq">
         <div class="w-full mx-auto">
-            <div class="shadow-md">
-                <div class="tab w-full overflow-hidden border-t">
-                    <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label One</label>
-                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                        <p class="p-5">Test</p>
-                        <div class="w-full mx-auto">
-                            <div class="shadow-md">
-                                <div class="tab w-full overflow-hidden border-t">
-                                    <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
-                                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label
-                                        inside
-                                        One</label>
-                                    <div
-                                        class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Tenetur, architecto,
-                                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
-                                            obcaecati soluta
-                                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                                    </div>
-                                </div>
-                                <div class="tab w-full overflow-hidden border-t">
-                                    <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-                                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Label
-                                        inside Two</label>
-                                    <div
-                                        class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Tenetur, architecto,
-                                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
-                                            obcaecati soluta
-                                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab w-full overflow-hidden border-t">
-                    <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Label Two</label>
-                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto,
-                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta
-                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                    </div>
-                </div>
-                <div class="tab w-full overflow-hidden border-t">
-                    <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Label Three</label>
-                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto,
-                            explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta
-                            molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <ul class="cd-accordion margin-top-lg margin-bottom-lg">
-            <li class="cd-accordion__item cd-accordion__item--has-children">
-                <input class="cd-accordion__input" type="checkbox" name="group-1" id="group-1">
-                <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-1"><span>Group
-                        1</span></label>
+            <nav class="nav" role="navigation">
+                <ul class="nav__list">
+                    <li>
+                        <input id="group-1" type="checkbox" hidden />
+                        <label for="group-1" class="text-2xl text-primary">
+                            Frequently asked questions for <br />
+                            Waterview Apartments
+                            <span class="fa fa-angle-right"></span>
+                        </label>
+                        <ul class="group-list">
+                            <li>
+                                <input id="sub-group-1" type="checkbox" hidden />
+                                <label for="sub-group-1">
+                                    How much are the prices for the apartment?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            ANS: Prices start from $3500 per sqm, therefore apartments prices start
+                                            from:
+                                            <table class="table-fixed w-full mt-4">
+                                                <thead>
+                                                    <tr class="bg-dark-blue border border-black">
+                                                        <th class="w-1/4 text-xs text-white font-medium p-2 ">
+                                                            Type</th>
+                                                        <th class="w-1/4 text-xs text-white font-medium p-2">
+                                                            Size sqm
+                                                        </th>
+                                                        <th class="w-1/2 text-xs text-white font-medium p-2">
+                                                            Price (₦)
+                                                            -Prices will vary per
+                                                            floor/view</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            Studio</td>
+                                                        <td class="text-xs p-2 text-primary border border-black">28.3
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            Starting
+                                                            from ₦44 MILLION</td>
+                                                    </tr>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            1 Bedroom</td>
+                                                        <td class="text-xs p-2 text-primary border border-black">53.6
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            Starting
+                                                            from ₦97 MILLION</td>
+                                                    </tr>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            2 Bedroom</td>
+                                                        <td class="text-xs p-2 text-primary border border-black">81.1
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            Starting
+                                                            from ₦163 MILLION</td>
+                                                    </tr>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            3 Bedroom</td>
+                                                        <td class="text-xs p-2 text-primary border border-black">109
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            Starting
+                                                            from ₦241 MILLION</td>
+                                                    </tr>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            4 Bedroom</td>
+                                                        <td class="text-xs p-2 text-primary border border-black">240
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            Starting
+                                                            from ₦558 MILLION</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-2" type="checkbox" hidden />
+                                <label for="sub-group-2">
+                                    When will construction start and end?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: Q2 2021 - Q2 2025 (subject to change)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-3" type="checkbox" hidden />
+                                <label for="sub-group-3">
+                                    Who is the Main contractor (Who will build it)?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: TBD
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-4" type="checkbox" hidden />
+                                <label for="sub-group-4">
+                                    Construction duration:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: 4 Years
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-5" type="checkbox" hidden />
+                                <label for="sub-group-5">
+                                    How may floors, and how many apartments?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: 29 floors and 276 apartments
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-6" type="checkbox" hidden />
+                                <label for="sub-group-6">
+                                    Mortgage available?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: None available now, but we are in discussions with several mortgage
+                                            firms
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-7" type="checkbox" hidden />
+                                <label for="sub-group-7">
+                                    What is the level of finishing?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: White box finish.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-8" type="checkbox" hidden />
+                                <label for="sub-group-8">
+                                    What are the facilities within the complex?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans:
+                                            <p>- Multi-level parking</p>
+                                            <p>- Access to the beach and convenience retail with international vendors
+                                            </p>
+                                            <p>- Gymnasium</p>
+                                            <p>- Swimming pool and leisure deck</p>
+                                            <p>- Children’s play area</p>
+                                            <p>- Round the clock valet and concierge services to help make hotel,
+                                                restaurant, and transport reservations.</p>
+                                            <p>- Games room</p>
+                                            <p>- Outdoor lounge</p>
+                                            <p>- Residential Club</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-9" type="checkbox" hidden />
+                                <label for="sub-group-9">
+                                    Parking arrangement?
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: Dependent on the unit type
 
-                <ul class="cd-accordion__sub cd-accordion__sub--l1">
-                    <li class="cd-accordion__item cd-accordion__item--has-children">
-                        <input class="cd-accordion__input" type="checkbox" name="sub-group-1" id="sub-group-1">
-                        <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-1"><span>Sub
-                                Group 1</span></label>
+                                            <table class="table-fixed  mt-4">
+                                                <thead>
+                                                    <tr class="bg-dark-blue border border-black">
+                                                        <th class="w-1/2 text-xs text-white font-medium p-2 ">
+                                                            Unit Type</th>
+                                                        <th class="w-1/2 text-xs text-white font-medium p-2">
+                                                            Parking bays allocated
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            1-3 bed
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            1
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bg-light-blue">
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            3-4 bed
+                                                        </td>
+                                                        <td class="text-xs p-2 text-primary border border-black">
+                                                            2
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-xs mt-2"> <span class="font-semibold">NB:</span> All
+                                                residents can purchase additional parking
+                                                bays. Priced @ ₦3 million.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-10" type="checkbox" hidden />
+                                <label for="sub-group-10">
+                                    Concierge services:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
 
-                        <ul class="cd-accordion__sub cd-accordion__sub--l2">
-                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
-                                    href="#0"><span>Image</span></a></li>
-                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
-                                    href="#0"><span>Image</span></a></li>
-                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
-                                    href="#0"><span>Image</span></a></li>
+                                            Yes, they will be available to assist in many ways like make hotel,
+                                            restaurant, and transport reservations, they will serve as a lifestyle
+                                            manager.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-11" type="checkbox" hidden />
+                                <label for="sub-group-11">
+                                    Serviced apartment options:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Landmark will manage the apartments for owners who are interested to
+                                            generate rental income.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-12" type="checkbox" hidden />
+                                <label for="sub-group-12">
+                                    Building square meterage:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            Ans: 50,000 sqm
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-13" type="checkbox" hidden />
+                                <label for="sub-group-13">
+                                    Payment Plan:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- 10% upon ground-breaking</p>
+                                            <p>- 30% on completion of building structure</p>
+                                            <p>- 30% on completion of building envelope</p>
+                                            <p>- 30% upon handover</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-14" type="checkbox" hidden />
+                                <label for="sub-group-14">
+                                    The USP… The dream we are selling
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>Branded residences</p>
+                                            <p>Beachfront</p>
+                                            <p>All year round beach access</p>
+                                            <p>One Stop Shop Retail, cinema, fine dining etc</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-15" type="checkbox" hidden />
+                                <label for="sub-group-15">
+                                    The advantage of buying here – Whitebox
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+
+                                            Whitebox: Finished to a white box with quality finishes for doors,
+                                            balustrade,
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-16" type="checkbox" hidden />
+                                <label for="sub-group-16">
+                                    The cost today against the future costs
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Based on location and quality of final product, the starting price is
+                                                $3500 per sqm set to rise over time</p>
+                                            <p>- We are accepting reservation deposits of $1000 or N1,000,000 as a sign
+                                                of expressing your interest.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-17" type="checkbox" hidden />
+                                <label for="sub-group-17">
+                                    The pricing for higher floors and water facing
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            There is Premium level pricing as you go higher in the building because the
+                                            cost of the project increases per floor due to logistics involved in
+                                            constructing and building.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-18" type="checkbox" hidden />
+                                <label for="sub-group-18">
+                                    The build timeline. start and finish
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            4 Years
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-19" type="checkbox" hidden />
+                                <label for="sub-group-19">
+                                    Numbers sold
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            40 apartments
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-20" type="checkbox" hidden />
+                                <label for="sub-group-20">
+                                    When price changes
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            At every stage of the payment plan milestones to completion
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group-21" type="checkbox" hidden />
+                                <label for="sub-group-21">
+                                    Commission for third party referrals
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            There will be a commission of 2- 2.5% for agents who bring buyers and are
+                                            registered with Landmark (% commission is still subject to change)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input id="group-2" type="checkbox" hidden />
+                        <label for="group-2" class="text-2xl text-primary"><span class="fa fa-angle-right"></span>Why
+                            invest in Landmark Waterview
+                            <br />
+                            Apartments</label>
+                        <ul class="group-list">
+                            <li>
+                                <input id="sub-group2-1" type="checkbox" hidden />
+                                <label for="sub-group2-1">
+                                    Ecosystem:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            The project will be located within the Fastest growing business leisure and
+                                            lifestyle destination in west Africa
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-2" type="checkbox" hidden />
+                                <label for="sub-group2-2">
+                                    Location:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Strategically located between Victoria Island and Lekki</p>
+                                            <p>- The surrounding density includes schools, hospitals, banks and several
+                                                other</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-3" type="checkbox" hidden />
+                                <label for="sub-group2-3">
+                                    Ocean View:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-4" type="checkbox" hidden />
+                                <label for="sub-group2-4">
+                                    Strategic array Services:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Round the clock concierge and valet</p>
+                                            <p>- Seamless connectivity with the ecosystem</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-5" type="checkbox" hidden />
+                                <label for="sub-group2-5">
+                                    Building features
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Round the clock concierge and valet</p>
+                                            <p>- Seamless connectivity with the ecosystem</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-6" type="checkbox" hidden />
+                                <label for="sub-group2-6">
+                                    Strategic array Services:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Round the clock valet and concierge services to help make hotel,
+                                                restaurant, and transport reservations.</p>
+                                            <p>- Swimming pool</p>
+                                            <p>- Clubhouse</p>
+                                            <p>- Wellness Centre</p>
+                                            <p>- Children’s play</p>
+                                            <p>- Dedicated parking for residents</p>
+                                            <p>- Leisure deck</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-7" type="checkbox" hidden />
+                                <label for="sub-group2-7">
+                                    Apartment features:
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Each apartment is provided with its own independent standalone</p>
+                                            <p>- Fire detection alarm system</p>
+                                            <p>- Centralized and intelligent cooling, fire alarm and protection system
+                                            </p>
+                                            <p>- Private balconies</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-8" type="checkbox" hidden />
+                                <label for="sub-group2-8">
+                                    24/7 power
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- Generated from an independent power provider.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-9" type="checkbox" hidden />
+                                <label for="sub-group2-9">
+                                    Dedicated parking
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+                                            <p>- For guests – 400 parking spaces</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="sub-group2-10" type="checkbox" hidden />
+                                <label for="sub-group2-10">
+                                    Secure environment
+                                    <span class="fa fa-angle-right"></span>
+                                </label>
+                                <ul class="sub-group-list">
+                                    <li>
+                                        <div class="px-8 answer">
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 
-                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
-                            href="#0"><span>Image</span></a></li>
-                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
-                            href="#0"><span>Image</span></a></li>
                 </ul>
-            </li>
+            </nav>
+        </div>
 
-            <li class="cd-accordion__item cd-accordion__item--has-children">
-                <a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a>
-            </li>
-            <li class="cd-accordion__item cd-accordion__item--has-children">
-                <a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a>
-            </li>
-        </ul> <!-- cd-accordion -->
+
+
     </div>
 
 
